@@ -23,3 +23,9 @@ Construção seguindo exatamente a especificação enviada, em 3 etapas, cada um
 ## Detalhes técnicos
 - TanStack Start, `createServerFn` para disponibilidade/criação; rotas admin sob `_authenticated`.
 - Testes Vitest para cálculo de slots (duração cobrindo slots, dias fechados, horários passados) e validação de telefone.
+
+## Confirmações
+1. Status do agendamento: Pendente, Confirmado, Concluído, Cancelado, Não compareceu.
+2. `createAppointment` valida no servidor a tabela `blocks` (horário ou dia inteiro) e recusa com mensagem amigável.
+3. `appointments`, `appointment_services` e `customers` sem nenhuma leitura pública. O público lê apenas `shop_settings`, `services` ativos e `appointment_slots` (só data/hora, sem dados pessoais).
+4. Testes Vitest de cálculo de slots e validação de telefone mantidos.
