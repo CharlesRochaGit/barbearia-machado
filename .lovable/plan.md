@@ -29,3 +29,4 @@ Construção seguindo exatamente a especificação enviada, em 3 etapas, cada um
 2. `createAppointment` valida no servidor a tabela `blocks` (horário ou dia inteiro) e recusa com mensagem amigável.
 3. `appointments`, `appointment_services` e `customers` sem nenhuma leitura pública. O público lê apenas `shop_settings`, `services` ativos e `appointment_slots` (só data/hora, sem dados pessoais).
 4. Testes Vitest de cálculo de slots e validação de telefone mantidos.
+5. Logo da Barbearia Machado: usada no topo da página do cliente, no painel admin e como ícone da aba, assim que a imagem for enviada. Até lá, nome em texto com ícone de tesoura.
