@@ -28,3 +28,10 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Booking availability and creation run on the server (`src/lib/booking.functions.ts`) and the `create_appointment` SQL function (service_role only); why: validation, blocks and slot conflicts must not depend on the browser.
+- Occupied time is stored one row per slot in `appointment_slots` with a partial unique index on active slots; why: the DB itself prevents double booking.
+- Public (anon) can read only `shop_settings`, active `services` and `appointment_slots(slot_start, active)`; everything else is admin-only via `has_role`; why: no customer personal data is public.
+- Pure slot/phone logic lives in `src/lib/booking.ts` with Vitest tests; keep it framework-free.
+- The first auth user created gets the admin role (public signup is disabled); why: single-admin shop without hardcoded credentials.
