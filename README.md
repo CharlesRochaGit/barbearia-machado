@@ -1,5 +1,7 @@
 # 💈 Barbearia Machado — MVP de Agendamento Online
 
+<img src="docs/Logo%20Barbearia.jpeg" alt="Logo Barbearia Machado" width="200">
+
 MVP de agendamento para a **Barbearia Machado** (São José/SC), atendida por um único barbeiro, o **Pablo**. O cliente agenda em poucos cliques, sem precisar trocar dezenas de mensagens, e o barbeiro controla a agenda por um painel administrativo.
 
 Projeto desenvolvido para o desafio da **DIO** com **Lovable** (desenvolvimento assistido por IA).
@@ -121,7 +123,9 @@ Para rodar os testes: `npm test`
 
 ## 📄 Documentação
 
-- Business Model Canvas:<img width="1521" height="1075" alt="bmc-barbearia-machado" src="https://github.com/user-attachments/assets/c13e0087-93c6-4efd-ac9c-7ef5d0e981d5" />
+- [Business Model Canvas](docs/bmc-barbearia-machado.png)
+
+![Business Model Canvas](docs/bmc-barbearia-machado.png)
 
 
 ## 👤 Autor
