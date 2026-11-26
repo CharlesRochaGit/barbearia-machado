@@ -125,7 +125,7 @@ Para rodar os testes: `npm test`
 
 - [Business Model Canvas](docs/bmc-barbearia-machado.png)
 
-![Business Model Canvas](docs/bmc-barbearia-machado.png)
+- [Mega Prompt usado no Lovable](docs/mega-prompt.md)
 
 
 ## 👤 Autor
